@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Reflections | Personal Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-feather-alt"></i>
+                    <span>Dark Reflections</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#stories">Stories</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to My Digital Journey</h1>
+                <p class="hero-subtitle">A collection of thoughts, experiences, and reflections from a developer's perspective</p>
+                <div class="hero-description">
+                    <p>This is where I document my daily adventures in code, life, and everything in between. Each story represents a moment in time, a lesson learned, or an insight gained. Scroll down to explore my journey through interactive panels that bring each experience to life.</p>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                    <span>Scroll to explore</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section id="stories" class="stories-section">
+        <div class="container">
+            <h2 class="section-title">My Story Collection</h2>
+            
+            <!-- Horizontal Scrolling Panels -->
+            <div class="panels-container">
+                <div class="panels-track" id="panelsTrack">
+                    <div class="panel" data-story="0">
+                        <div class="panel-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="panel-content">
+                            <h3>First Steps in React</h3>
+                            <span class="date">March 1, 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="panel active" data-story="1">
+                        <div class="panel-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                        <div class="panel-content">
+                            <h3>Breakthrough with Hooks</h3>
+                            <span class="date">March 5, 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="panel" data-story="2">
+                        <div class="panel-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                        </div>
+                        <div class="panel-content">
+                            <h3>Nature & Code Inspiration</h3>
+                            <span class="date">March 8, 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="panel" data-story="3">
+                        <div class="panel-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="panel-content">
+                            <h3>Building This Blog</h3>
+                            <span class="date">March 10, 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="panel" data-story="4">
+                        <div class="panel-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="panel-content">
+                            <h3>Deploying My First App</h3>
+                            <span class="date">March 12, 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="panel" data-story="5">
+                        <div class="panel-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="panel-content">
+                            <h3>Open Source Contributions</h3>
+                            <span class="date">March 15, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Story Details -->
+            <div class="story-details" id="storyDetails">
+                <div class="story-content">
+                    <h3 id="storyTitle">Breakthrough with Hooks</h3>
+                    <p class="story-date" id="storyDate">March 5, 2025</p>
+                    <p id="storyText">Today I had a major breakthrough in my understanding of React's more advanced hooks. After struggling for weeks with complex state management, something finally clicked! The combination of useContext and useReducer opened up a whole new world of possibilities for managing application state.</p>
+                    <button class="read-more-btn" id="readMoreBtn">Read Full Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate developer who believes in the power of code to solve real-world problems. This blog is my way of documenting the journey, sharing insights, and connecting with fellow developers.</p>
+                    <p>When I'm not coding, you'll find me hiking in nature, reading about new technologies, or experimenting with creative projects that blend art and technology.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Blog Posts</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2+</h3>
+                        <p>Years Coding</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Have a question or want to collaborate? I'd love to hear from you!</p>
+            
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>hello@darkreflections.dev</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <div>
+                        <h4>Twitter</h4>
+                        <p>@darkreflections</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/darkreflections</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-feather-alt"></i>
+                        <span>Dark Reflections</span>
+                    </div>
+                    <p>Documenting the journey, one post at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#stories">Stories</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dark Reflections. Made with <i class="fas fa-heart"></i> and lots of coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Full Stories -->
+    <div class="modal" id="storyModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Story content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
