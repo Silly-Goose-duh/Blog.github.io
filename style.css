@@ -1,18 +1,25 @@
 /* CSS Variables */
 :root {
+    --primary: #1a1a1a;
+    --secondary: #252525;
+    --accent: #bb86fc;
+    --text: #ffffff;
+    --text-secondary: #b3b3b3;
+    --border-radius: 8px;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1.125rem;
+    --spacing-xl: 1.5rem;
     --bg-primary: #0a0a0a;
     --bg-secondary: #1a1a1a;
     --bg-tertiary: #2a2a2a;
-    --text-primary: #ffffff;
-    --text-secondary: #b0b0b0;
     --text-muted: #666666;
-    --accent: #bb86fc;
     --accent-hover: #9966cc;
     --accent-dark: #6200ea;
     --gradient: linear-gradient(135deg, #bb86fc, #6200ea);
     --gradient-blue: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    --border-radius: 12px;
     --transition: all 0.3s ease;
     --retro-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
@@ -29,22 +36,24 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    color: var(--text);
     background: 
         linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7)),
         repeating-linear-gradient(45deg, #0a0a0a 0%, #1a1a1a 10%, #2a2a2a 20%);
     background-attachment: fixed;
-    color: var(--text-primary);
-    line-height: 1.6;
     overflow-x: hidden;
 }
 
 .container {
-    width: 95%;
-    max-width: 1800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 2rem;
+    padding: 0 var(--spacing-md);
 }
 
 /* Header Styles */
@@ -55,7 +64,7 @@ header {
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 1.5rem 0;
+    padding: var(--spacing-md) 0;
     transition: var(--transition);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -70,11 +79,11 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.35rem;
     font-weight: 700;
     color: var(--accent);
     position: relative;
-    padding: 0.5rem 1rem;
+    padding: 0.375rem 0.75rem;
     border-radius: var(--border-radius);
     transition: all 0.3s ease;
 }
@@ -97,8 +106,8 @@ nav {
 }
 
 .logo i {
-    margin-right: 0.8rem;
-    font-size: 2rem;
+    margin-right: 0.6rem;
+    font-size: 1.5rem;
     animation: featherGlow 3s ease-in-out infinite;
     position: relative;
 }
@@ -205,7 +214,7 @@ nav {
     align-items: center;
     background: radial-gradient(ellipse at center, rgba(187, 134, 252, 0.1) 0%, transparent 70%);
     position: relative;
-    padding: 8rem 0;
+    padding: var(--spacing-xl) 0;
 }
 
 .hero-content {
@@ -223,20 +232,20 @@ nav {
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: 2.25rem;
     font-weight: 800;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-md);
     line-height: 1.2;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     color: var(--text-secondary);
-    margin-bottom: 3rem;
+    margin-bottom: var(--spacing-lg);
     line-height: 1.8;
     animation: fadeInUp 1s ease 0.2s both;
 }
@@ -306,7 +315,7 @@ nav {
 
 /* Stories Section */
 .stories-section {
-    padding: 8rem 0;
+    padding: var(--spacing-xl) 0;
     background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
     position: relative;
     overflow: hidden;
@@ -314,9 +323,9 @@ nav {
 
 .section-title {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 1.875rem;
     font-weight: 700;
-    margin-bottom: 4rem;
+    margin-bottom: var(--spacing-lg);
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -592,7 +601,7 @@ nav {
 
 /* About Section */
 .about-section {
-    padding: 8rem 0;
+    padding: var(--spacing-xl) 0;
     background: var(--bg-primary);
     animation: fadeIn 1s ease;
 }
@@ -610,8 +619,8 @@ nav {
 }
 
 .about-text h2 {
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.875rem;
+    margin-bottom: var(--spacing-lg);
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -967,7 +976,7 @@ nav {
 /* Footer */
 footer {
     background: var(--bg-primary);
-    padding: 6rem 0 2rem;
+    padding: var(--spacing-lg) 0 2rem;
 }
 
 .footer-content {
@@ -1325,6 +1334,60 @@ footer {
     .logo::before {
         animation: logoPulse 2s ease-in-out infinite;
     }
+
+    body {
+        font-size: 13px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.875rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .story-panel {
+        width: 180px;
+        height: 240px;
+    }
+
+    .story-panel img {
+        height: 120px;
+    }
+
+    .story-panel h3 {
+        font-size: 1rem;
+    }
+
+    .story-panel p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .story-panel {
+        width: 150px;
+        height: 200px;
+    }
+
+    .story-panel img {
+        height: 100px;
+    }
 }
 
 /* Custom Scrollbar */
@@ -1470,8 +1533,8 @@ footer {
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent);
