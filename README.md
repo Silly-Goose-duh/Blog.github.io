@@ -4,4 +4,5 @@ And this quote hit me and made me realise the things around me was amazing for a
 
 so here iam discussing it with people around me or maybe just to myself as a journel.
 
-[website link]
+[Tommy's Blog](https://tommysblog.vercel.app/)
+
