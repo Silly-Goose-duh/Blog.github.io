@@ -1,0 +1,74 @@
+{
+    "posts": [
+        {
+            "title": "The Art of Digital Minimalism",
+            "date": "March 25, 2025",
+            "preview": "Exploring how less can be more in our increasingly connected world, and finding peace in digital simplicity...",
+            "filename": "digital-minimalism.html",
+            "icon": "fas fa-leaf"
+        },
+        {
+            "title": "Lost in Literature",
+            "date": "March 20, 2025",
+            "preview": "Exploring the depths of classic literature and finding pieces of myself scattered through the pages...",
+            "filename": "lost-in-literature.html",
+            "icon": "fas fa-book"
+        },
+        {
+            "title": "Midnight Thoughts",
+            "date": "March 15, 2025",
+            "preview": "When the world sleeps, my mind wanders through the corridors of consciousness...",
+            "filename": "midnight-thoughts.html",
+            "icon": "fas fa-moon"
+        },
+        {
+            "title": "The Psychology of Dreams",
+            "date": "March 10, 2025",
+            "preview": "Delving into the fascinating world of dream interpretation and subconscious meanings...",
+            "filename": "psychology-of-dreams.html",
+            "icon": "fas fa-brain"
+        },
+        {
+            "title": "Echoes of Solitude",
+            "date": "March 5, 2025",
+            "preview": "Finding comfort in the quiet moments and learning to embrace being alone without feeling lonely...",
+            "filename": "echoes-of-solitude.html",
+            "icon": "fas fa-user"
+        },
+        {
+            "title": "The Poetry of Rain",
+            "date": "February 28, 2025",
+            "preview": "Contemplating life's rhythms through the gentle patter of raindrops on my window...",
+            "filename": "poetry-of-rain.html",
+            "icon": "fas fa-cloud-rain"
+        },
+        {
+            "title": "Wanderlust Chronicles",
+            "date": "February 23, 2025",
+            "preview": "Tales of adventures both real and imagined, and the eternal call of unexplored horizons...",
+            "filename": "wanderlust-chronicles.html",
+            "icon": "fas fa-compass"
+        },
+        {
+            "title": "Philosophy of Code",
+            "date": "February 18, 2025",
+            "preview": "Where programming meets philosophy - exploring the deeper meanings behind the lines we write...",
+            "filename": "philosophy-of-code.html",
+            "icon": "fas fa-code"
+        },
+        {
+            "title": "Starlit Contemplations",
+            "date": "February 13, 2025",
+            "preview": "Gazing at the night sky and pondering our place in this vast cosmic dance...",
+            "filename": "starlit-contemplations.html",
+            "icon": "fas fa-star"
+        },
+        {
+            "title": "The Art of Overthinking",
+            "date": "February 8, 2025",
+            "preview": "A deep dive into the mind of an overthinker, where every thought spawns a thousand more...",
+            "filename": "art-of-overthinking.html",
+            "icon": "fas fa-lightbulb"
+        }
+    ]
+} 

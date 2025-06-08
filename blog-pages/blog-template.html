@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy's Blog - {BLOG_TITLE}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog-style.css">
+</head>
+<body class="blog-post-page">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-feather-alt"></i>
+                    <span>The Life of Tommy</span>
+                </div>
+                <a href="index.html" class="return-btn">
+                    <i class="fas fa-arrow-left"></i> Return to Blog
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-content">
+        <div class="container">
+            <article>
+                <header class="blog-header">
+                    <h1>{BLOG_TITLE}</h1>
+                    <div class="blog-meta">
+                        <span class="date">{BLOG_DATE}</span>
+                        <span class="reading-time">5 min read</span>
+                    </div>
+                </header>
+                
+                <div class="blog-body">
+                    {BLOG_CONTENT}
+                </div>
+            </article>
+
+            <div class="blog-navigation">
+                <a href="{PREV_BLOG}.html" class="nav-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                    Previous Post
+                </a>
+                <a href="{NEXT_BLOG}.html" class="nav-btn next">
+                    Next Post
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-feather-alt"></i>
+                        <span>The Life of Tommy</span>
+                    </div>
+                    <p>Wandering through thoughts, one post at a time.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Find Me</h4>
+                    <div class="social-icons">
+                        <a href="mailto:gooseisback4u@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/Silly-Goose-duh" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/tommy.thoughts" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
